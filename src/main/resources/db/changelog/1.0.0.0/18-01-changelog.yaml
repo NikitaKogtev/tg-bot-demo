@@ -1,0 +1,79 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: NikitaKogtev
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_jokes
+                  name: id
+                  type: UUID
+              - column:
+                  constraints:
+                    nullable: false
+                  name: joke_text
+                  type: VARCHAR(1000)
+              - column:
+                  constraints:
+                    nullable: false
+                  name: humor_level
+                  type: VARCHAR(255)
+              - column:
+                  constraints:
+                    nullable: false
+                  name: created_user
+                  type: VARCHAR(50)
+              - column:
+                  name: created_at
+                  type: timestamp
+              - column:
+                  name: like_value
+                  type: BIGINT
+              - column:
+                  name: dislike_value
+                  type: BIGINT
+            tableName: jokes
+  - changeSet:
+      id: 2
+      author: NikitaKogtev
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_memes
+                  name: id
+                  type: UUID
+              - column:
+                  constraints:
+                    nullable: false
+                  name: image_meme_url
+                  type: VARCHAR(1000)
+              - column:
+                  constraints:
+                    nullable: false
+                  name: humor_level
+                  type: VARCHAR(255)
+              - column:
+                  constraints:
+                    nullable: false
+                  name: created_user
+                  type: VARCHAR(50)
+              - column:
+                  name: created_at
+                  type: timestamp
+              - column:
+                  name: like_value
+                  type: BIGINT
+              - column:
+                  name: dislike_value
+                  type: BIGINT
+            tableName: memes

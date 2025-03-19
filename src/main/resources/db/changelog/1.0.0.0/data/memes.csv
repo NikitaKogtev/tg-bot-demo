@@ -1,0 +1,6 @@
+id,image_meme_url,humor_level,created_user,created_at,like_value,dislike_value
+550e8400-e29b-41d4-a716-446655440005,https://example.com/meme1.jpg,LIGHT,nikitakogtev,2025-03-18 22:44:23.000000,0,0
+550e8400-e29b-41d4-a716-446655440006,https://example.com/meme2.jpg,MEDIUM,nikitakogtev,2025-03-18 22:44:23.000000,0,0
+550e8400-e29b-41d4-a716-446655440007,https://example.com/meme3.jpg,HARD,nikitakogtev,2025-03-18 22:44:23.000000,0,0
+550e8400-e29b-41d4-a716-446655440008,https://example.com/meme4.jpg,LIGHT,nikitakogtev,2025-03-18 22:44:23.000000,0,0
+550e8400-e29b-41d4-a716-446655440009,https://example.com/meme5.jpg,MEDIUM,nikitakogtev,2025-03-18 22:44:23.000000,0,0

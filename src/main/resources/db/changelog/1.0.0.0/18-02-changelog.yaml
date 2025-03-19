@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: NikitaKogtev
+      changes:
+        - loadData:
+            tableName: jokes
+            file: data/jokes.csv
+            separator: ","
+            usePreparedStatements: true
+            relativeToChangelogFile: true
+  - changeSet:
+      id: 2
+      author: NikitaKogtev
+      changes:
+        - loadData:
+            tableName: memes
+            file: data/memes.csv
+            separator: ","
+            usePreparedStatements: true
+            relativeToChangelogFile: true
+
+
