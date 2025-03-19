@@ -1,0 +1,16 @@
+spring.application.name: tg-bot-demo
+
+telegram.bot:
+  name: *********
+  token: *********
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/joke_meme_bot_db
+    username: *******
+    password: *******
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: update
+    properties.hibernate.format_sql: true
